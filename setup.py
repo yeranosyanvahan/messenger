@@ -19,6 +19,9 @@ setup(
         'Programming Language :: Python :: Implementation :: MicroPython',
         'License :: MIT License',
     ],
+    install_requires=[
+          'pika',
+      ],
     setuptools_git_versioning={
         "enabled": True,
     },
