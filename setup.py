@@ -16,8 +16,7 @@ setup(
     classifiers = [
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
-        'Programming Language :: Python :: Implementation :: MicroPython',
-        'License :: MIT License',
+        'Programming Language :: Python :: Implementation :: MicroPython'
     ],
     install_requires=[
           'pika',
