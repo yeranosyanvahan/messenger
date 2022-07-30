@@ -63,3 +63,10 @@ class Messenger:
         self.basic_consume(on_message_callback = self._callback, auto_ack = True)
         self.connection.process_data_events(time_limit=timeout)
         return self.response
+
+
+class Connection:
+    def __init__(self, host = 'localhost', username = None, password = None):
+        credentials = pika.PlainCredentials(username, password)
+        parameters = pika.ConnectionParameters(host,credentials = credentials)
+        self.connection = pika.BlockingConnection(parameters)

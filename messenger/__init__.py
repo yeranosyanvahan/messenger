@@ -1,1 +1,1 @@
-from .Messenger import *
+from .Messenger import Messenger, Connection
